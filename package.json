@@ -1,6 +1,6 @@
 {
   "name": "js-object-oriented-bind-call-apply-this-lab",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "JavaScript bind call apply this for Learn.co",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "bind",
     "lab"
   ],
-  "author": "@gj",
+  "author": "Flatiron School",
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
     "url": "https://github.com/learn-co-curriculum/js-object-oriented-bind-call-apply-this-lab/issues"
