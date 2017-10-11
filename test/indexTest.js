@@ -1,29 +1,39 @@
 const expect = chai.expect;
 
 describe('global functions', function() {
-  let returnsThis;
+  let returnsThisAndArgs;
   let bob;
 
+
   beforeEach(function(){
-     returnsThis = function(){ return this}
+     returnsThisAndArgs = function(){ return {thisValue: this, arguments: Array.from(arguments)} }
      bob = {name: 'bob'}
+     age = 18
   })
 
   describe('invokeFunction', function(){
-    it('calls and returns the function as a callback, that shows that this is global from the callack', function(){
-      expect(justInvoke(returnsThis)).to.equal(window)
+    it('calls and returns the function as a callback, that shows that this is global from the callback', function(){
+      expect(justInvoke(returnsThisAndArgs).thisValue).to.equal(window)
     })
   })
 
   describe('setThisWithCall', function(){
-    it('calls and returns the function as a callback, and assigns this to be bob', function(){
-      expect(setThisWithCall(returnsThis, bob)).to.equal(bob)
+    let age = 18
+    it('calls and returns the function as a callback, and assigns this to be bob while passing an argument to the invoked function', function(){
+      let result = setThisWithCall(returnsThisAndArgs, bob, 18)
+      expect(result.thisValue).to.equal(bob)
+      expect(result.arguments[0]).to.equal(18)
     })
   })
 
   describe('setThisWithApply', function(){
-    it('calls and returns the function as a callback, and assigns this to be bob', function(){
-      expect(setThisWithApply(returnsThis, bob)).to.equal(bob)
+    let age = 20
+    let hairColor = 'black'
+    it('calls and returns the function as a callback, and assigns this to be bob while passing all arguments to the invoked function', function(){
+      let result = setThisWithApply(returnsThisAndArgs, bob, [age, hairColor])
+      expect(result.thisValue).to.equal(bob)
+      expect(result.arguments[0]).to.equal(20)
+      expect(result.arguments[1]).to.equal('black')
     })
 
     it('calls and returns the function as a callback, assigns this to be bob, and sets the array as arguments', function(){
