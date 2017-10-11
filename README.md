@@ -18,5 +18,7 @@ We ask you to write the following functions:
 <p class='util--hide'>View <a href='https://learn.co/lessons/js-object-oriented-bind-call-apply-lab'>Javascript Bind, Call and Apply Lab</a> on Learn.co and start learning to code for free.</p>
 
 *Don't forget to make use of MDN's call and apply documentation!*
-![MDN Call](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
-![MDN Apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+
+[MDN Call](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+
+[MDN Apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
