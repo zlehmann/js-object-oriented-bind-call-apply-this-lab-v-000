@@ -6,7 +6,7 @@
 
 ## Instructions
 
-In this lab, our *tests* define functions that are then passed through to functions we ask you to write.  You're functions should not only invoke the functions passed as arguments, but also modify the `this` value of the functions passed through while ensuring arguments are properly passed.   
+In this lab, our *tests* define functions that are then passed through to functions we ask you to write.  Your functions should not only invoke the functions passed as arguments, but also modify the `this` value of the functions passed through while ensuring arguments are properly passed.   
 
 We ask you to write the following functions:
 
