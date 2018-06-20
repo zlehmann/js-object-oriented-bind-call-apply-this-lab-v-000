@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/learn-co-curriculum/js-object-oriented-bind-call-apply-this-lab#readme",
   "devDependencies": {
-    "learn-browser": "^0.1.13"
+    "learn-browser": "^0.1.17"
   },
   "directories": {
     "test": "test"
