@@ -11,7 +11,7 @@ describe('global functions', function() {
      age = 18
   })
 
-  describe('invokeFunction', function(){
+  describe('justInvoke', function(){
     it('calls and returns the function as a callback, that shows that this is global from the callback', function(){
       expect(justInvoke(returnsThisAndArgs).thisValue).to.equal(window)
     })
