@@ -12,5 +12,6 @@ function setThisWithApply(fn, thisValue, args) {
 }
 
 function returnNewFunctionOf(functionToBeCoped, thisValue) {
-
+  const result = functionToBeCoped.bind(thisValue);
+  return result;
 }
